@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&family=Quicksand:wght@300..700&display=swap');
+
+*, 
+*::before, 
+*::after {
+    font-family: "Quicksand", sans-serif;
+}
+
+body {
+    background-color: rgb(35, 37, 39);
+    width: 100%;
+    min-height: 100vh;
+}
+
+main {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+h1 {
+    color: #ecf0f1;
+    text-shadow: 2px 2px 4px #000000;
+}
+  
+p {
+    color: #ecf0f1;
+    font-size: 1.125em;
+}
+
+.swiper {
+    width: 100%;
+    padding: 50px 0;
+}
+
+.swiper-slide {
+    position: relative;
+    width: 420px;
+    aspect-ratio: 3/4;
+    border-radius: 18px;
+    background: #121627;
+    border: 1px solid rgba(177, 177, 177, 0.4);
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+    border-radius: inherit;
+}
+
+.container-card {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -10%);
+    -ms-transform: translate(-50%, -10%);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    transition: all 0.5s linear;
+}
+
+.container-card p {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+
+
+
+
