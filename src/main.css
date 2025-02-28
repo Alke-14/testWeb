@@ -22,7 +22,7 @@ main {
 
 h1 {
     color: #ecf0f1;
-    text-shadow: 2px 2px 4px #000000;
+    text-shadow: 0 5px 5px #7b1c1c;
 }
   
 p {
@@ -51,23 +51,98 @@ p {
     border-radius: inherit;
 }
 
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
 .container-card {
+    display:block;
     position: absolute;
-    left: 50%;
-    transform: translate(-50%, -10%);
-    -ms-transform: translate(-50%, -10%);
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
+    justify-content: center;
+    width: 100%;
+
     transition: all 0.5s linear;
 }
 
-.container-card p {
+h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #ecf0f1;
+}
+
+.container-card h1 {
+    font-weight: 700;
+    padding-top: 8px;
     font-size: 1.2rem;
+}
+
+.container-card p {
+    padding-top: 5px;
+    color: rgb(162, 159, 159);
+    position: relative;
+    padding-right: 18px;
+    padding-left: 18px;
+    font-size: 1rem;
     font-weight: 600;
 }
 
+.container-card .btn {
+    position: relative;
+    left: 0;
+    width: 50%;
+    margin-top: 15px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #ecf0f1;
+    background-color: #0f3460;
+    transition: all 0.3s linear;
+    cursor: pointer;
+    border-radius: 5px;
+    text-decoration: none;
+}
 
+.container-card .btn:after {
+    content: '>>';
+    position: absolute;
+    transition: 0.5s;
+    opacity: 0;
+    right: -20px;
+}
 
+.container-card .btn:hover {
+    background-color: #e94560;
+    color: rgb(7, 7, 7);
+    padding-right: 24px;
+    padding-left:8px;
+}
 
+.container-card .btn:hover:after {
+    opacity: 1;
+    right: 10px;
+}
 
+@media screen and (max-width: 576px) {
+    .max-w-6xl {
+        width: 540px;
+        padding: 20px;
+    }
+}
+
+@media screen and (max-width: 476px) {
+    .max-w-6xl {
+        width: 450px;
+        padding: 20px;
+    }
+}
+
+@media screen and (max-width: 365px) {
+    .max-w-6xl {
+        width: 350px;
+        padding: 20px;
+    }
+}
