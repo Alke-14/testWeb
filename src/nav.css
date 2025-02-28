@@ -1,21 +1,27 @@
 nav {
-    position: fixed;
-    z-index: 2;
-    background-color: #342f2f;
-    align-items: center;
-    width: 25.3%;
-    margin: auto;
-    margin-left: 20px;
-    margin-top: 12px;
-    height: 50px;
-    border-radius: 8px;
-    font-size: 0;
-  }
+  position: fixed;
+  z-index: 2;
+  background-color: #342f2f;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 25.3%;
+  margin: auto;
+  margin-left: 20px;
+  overflow: hidden;
+  margin-top: 12px;
+  height: 50px;
+  border-radius: 8px;
+  font-size: 0;
+}
   nav a {
     line-height: 50px;
     height: 100%;
     font-size: 15px;
-    display: inline-block;
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
     position: relative;
     z-index: 1;
     text-decoration: none;
@@ -45,27 +51,69 @@ nav {
     width: 100px;
   }
 
-  nav .start-home, a:nth-child(1):hover~.animation {
-    width: 100px;
+nav .start-home, a:nth-child(1):hover~.animation {
+  width: 100px;
+  left: 0;
+  background-color: #0f6d5b;
+}
+nav .start-about, a:nth-child(2):hover~.animation {
+  width: 110px;
+  left: 100px;
+  background-color: #e74c3c;
+}
+nav .start-blog, a:nth-child(3):hover~.animation {
+  width: 100px;
+  left: 210px;
+  background-color: #3498db;
+}
+nav .start-portfolio, a:nth-child(4):hover~.animation {
+  width: 100px;
+  left: 310px;
+  background-color: #9b59b6;
+}
+
+@media screen and (max-width: 768px) {
+  nav {
+    width: 90%;
+    margin-left: 5%;
+    justify-content: space-around;
+  }
+
+  nav a {
+    font-size: 12px;
+    padding: 0 10px;
+  }
+
+  nav a:nth-child(1),
+  nav a:nth-child(2),
+  nav a:nth-child(3),
+  nav a:nth-child(4) {
+    width: auto;
+    flex: 1;
+  }
+
+  nav .start-home, nav a:nth-child(1):hover ~ .animation {
+    width: 25%;
     left: 0;
-    background-color: #0f6d5b;
   }
-  nav .start-about, a:nth-child(2):hover~.animation {
-    width: 110px;
-    left: 100px;
-    background-color: #e74c3c;
+
+  nav .start-about, nav a:nth-child(2):hover ~ .animation {
+    width: 25%;
+    left: 25%;
   }
-  nav .start-blog, a:nth-child(3):hover~.animation {
-    width: 100px;
-    left: 210px;
-    background-color: #3498db;
+
+  nav .start-blog, nav a:nth-child(3):hover ~ .animation {
+    width: 25%;
+    left: 50%;
   }
-  nav .start-portefolio, a:nth-child(4):hover~.animation {
-    width: 100px;
-    left: 310px;
-    background-color: #9b59b6;
+
+  nav .start-portfolio, nav a:nth-child(4):hover ~ .animation {
+    width: 25%;
+    left: 75%;
   }
+}
   
-  span {
-      color: #2BD6B4;
-  }
+
+span {
+    color: #2BD6B4;
+}
