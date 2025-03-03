@@ -7,10 +7,10 @@ const swiper = new Swiper('.swiper', {
   initialSlide: 2,
   spaceBetween: 30,
   centeredSlides: true,
-  // autoplay: {
-  //   delay: 2500,
-  //   disableOnInteraction: false,
-  // },
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
   loop: false,
   effect:'coverflow',
   coverflowEffect: {
@@ -29,12 +29,12 @@ const swiper = new Swiper('.swiper', {
   },
   breakpoints: {
     640: {
-      slidesPerView: 1,
-      spaceBetween: 10,
+      slidesPerView: 2,
+      spaceBetween: -100,
     },
     768: {
       slidesPerView: 2,
-      spaceBetween: 20,
+      spaceBetween: -100,
     },
     1024: {
       slidesPerView: 3,

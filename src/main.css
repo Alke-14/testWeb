@@ -32,7 +32,6 @@ p {
 
 .swiper {
     width: 100%;
-    padding: 50px 0;
 }
 
 .swiper-slide {
@@ -74,7 +73,14 @@ h1 {
     color: #ecf0f1;
 }
 
-.container-card h1 {
+h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #ecf0f1;
+}
+
+.container-card h2 {
+    color: #ecf0f1;
     font-weight: 700;
     padding-top: 8px;
     font-size: 1.2rem;
@@ -126,6 +132,26 @@ h1 {
     right: 10px;
 }
 
+.box {
+    gap: 2rem;
+}
+
+@media screen and (max-width: 768px) {
+    .max-w-6xl {
+        width: 730px;
+        padding: 20px;
+    }
+    
+}
+
+@media screen and (max-width: 640px) {
+    .max-w-6xl {
+        width: 620px;
+        padding: 20px;
+    }
+    
+}
+
 @media screen and (max-width: 576px) {
     .max-w-6xl {
         width: 540px;
@@ -140,9 +166,13 @@ h1 {
     }
 }
 
-@media screen and (max-width: 365px) {
+@media screen and (max-width: 400px) {
+    .box {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
     .max-w-6xl {
         width: 350px;
-        padding: 20px;
+        padding: 25px;
     }
 }
