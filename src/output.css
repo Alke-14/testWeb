@@ -356,14 +356,8 @@
   .m-2\.5 {
     margin: calc(var(--spacing) * 2.5);
   }
-  .m-3 {
-    margin: calc(var(--spacing) * 3);
-  }
   .m-4 {
     margin: calc(var(--spacing) * 4);
-  }
-  .m-5 {
-    margin: calc(var(--spacing) * 5);
   }
   .m-6 {
     margin: calc(var(--spacing) * 6);
@@ -465,9 +459,6 @@
   .h-\[100px\] {
     height: 100px;
   }
-  .h-\[130px\] {
-    height: 130px;
-  }
   .h-\[210px\] {
     height: 210px;
   }
@@ -491,9 +482,6 @@
   }
   .w-\[100px\] {
     width: 100px;
-  }
-  .w-\[130px\] {
-    width: 130px;
   }
   .w-\[210px\] {
     width: 210px;
@@ -895,6 +883,9 @@
   }
   .gap-3 {
     gap: calc(var(--spacing) * 3);
+  }
+  .gap-4 {
+    gap: calc(var(--spacing) * 4);
   }
   .space-y-reverse {
     :where(& > :not(:last-child)) {
@@ -1312,11 +1303,11 @@
   .p-4 {
     padding: calc(var(--spacing) * 4);
   }
-  .px-3 {
-    padding-inline: calc(var(--spacing) * 3);
-  }
   .pt-4 {
     padding-top: calc(var(--spacing) * 4);
+  }
+  .pt-10 {
+    padding-top: calc(var(--spacing) * 10);
   }
   .pt-20 {
     padding-top: calc(var(--spacing) * 20);
@@ -1902,9 +1893,14 @@
   .transform-view {
     transform-box: view-box;
   }
-  .sm\:px-2 {
-    @media (width >= 40rem) {
-      padding-inline: calc(var(--spacing) * 2);
+  .max-\[430px\]\:grid {
+    @media (width < 430px) {
+      display: grid;
+    }
+  }
+  .max-\[430px\]\:grid-cols-2 {
+    @media (width < 430px) {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
     }
   }
   .md\:bg-fixed {
