@@ -268,13 +268,19 @@ p {
         width: 340px;
     }
 
+    .flex {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+    }
+
+
     .swiper-slide h2 {
         font-size: 1.125rem;
     }
 
-    .float-left img {
-        width: 100px;
-        height: 100px;
+    .box p {
+        justify-self: center;
     }
 
     .mobile-resize {
