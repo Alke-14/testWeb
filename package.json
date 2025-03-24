@@ -1,6 +1,7 @@
 {
   "name": "testweb",
   "version": "1.0.0",
+  "type" : "module",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -21,6 +22,6 @@
   "dependencies": {
     "@tailwindcss/cli": "^4.0.8",
     "swiper": "^11.2.4",
-    "tailwindcss": "^4.0.8"
+    "tw-elements": "^2.0.0"
   }
 }
