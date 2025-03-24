@@ -7,7 +7,6 @@
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
     --color-red-500: oklch(0.637 0.237 25.331);
-    --color-amber-400: oklch(0.828 0.189 84.429);
     --color-yellow-200: oklch(0.945 0.129 101.54);
     --color-cyan-50: oklch(0.984 0.019 200.873);
     --color-blue-400: oklch(0.707 0.165 254.624);
@@ -414,9 +413,6 @@
   .m-0 {
     margin: calc(var(--spacing) * 0);
   }
-  .m-2 {
-    margin: calc(var(--spacing) * 2);
-  }
   .m-2\.5 {
     margin: calc(var(--spacing) * 2.5);
   }
@@ -545,9 +541,6 @@
   .h-0 {
     height: calc(var(--spacing) * 0);
   }
-  .h-1 {
-    height: calc(var(--spacing) * 1);
-  }
   .h-1\.5 {
     height: calc(var(--spacing) * 1.5);
   }
@@ -580,9 +573,6 @@
   }
   .w-0 {
     width: calc(var(--spacing) * 0);
-  }
-  .w-1 {
-    width: calc(var(--spacing) * 1);
   }
   .w-1\.5 {
     width: calc(var(--spacing) * 1.5);
@@ -1332,9 +1322,6 @@
   .bg-\[var\(--my_variable\)\] {
     background-color: var(--my_variable);
   }
-  .bg-amber-400 {
-    background-color: var(--color-amber-400);
-  }
   .bg-black {
     background-color: var(--color-black);
   }
@@ -1542,9 +1529,6 @@
   }
   .px-\[0\.4rem\] {
     padding-inline: 0.4rem;
-  }
-  .py-1 {
-    padding-block: calc(var(--spacing) * 1);
   }
   .py-1\.5 {
     padding-block: calc(var(--spacing) * 1.5);
@@ -1893,9 +1877,6 @@
   }
   .\!opacity-0 {
     opacity: 0% !important;
-  }
-  .\!opacity-90 {
-    opacity: 90% !important;
   }
   .\!opacity-100 {
     opacity: 100% !important;
