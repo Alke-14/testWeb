@@ -36,6 +36,36 @@ p {
     font-size: 1.125em;
 }
 
+.button-skill {
+    display: inline-block;
+    background: #144581;
+    color: aliceblue;
+    border-radius: 0.2rem;
+    transition: background 0.2s ease-in-out, transform 0.15s ease-in-out, border-radius 0.2s ease-in-out;
+
+}
+
+.button-skill:hover {
+    background: #893737;
+    border-radius: 35% 90%;
+    transform: scale(1.04);
+}
+
+.button-skill2 {
+    display: inline-block;
+    background: #144581;
+    color: aliceblue;
+    border-radius: 0.2rem;
+    transition: background 0.2s ease-in-out, transform 0.15s ease-in-out, border-radius 0.2s ease-in-out;
+
+}
+
+.button-skill2:hover {
+    background: #893737;
+    border-radius: 90% 35%;
+    transform: scale(1.04);
+}
+
 .float-left img {
     width: 130px;
     height: 130px;
@@ -151,6 +181,11 @@ p {
     font-weight: 600;
 }
 
+.contact {
+    display: flex;
+    align-items: center;
+}
+
 .button-info {
     position: relative;
     left: 0;
@@ -210,14 +245,16 @@ p {
     right: -20px;
 }
 
-.container-card .btn:hover {
+.container-card .btn:hover,
+.container-card .btn:active {
     background-color: #e94560;
     color: rgb(7, 7, 7);
     padding-right: 24px;
     padding-left:8px;
 }
 
-.container-card .btn:hover:after {
+.container-card .btn:hover:after,
+.container-card .btn:active:after {
     opacity: 1;
     right: 10px;
 }
@@ -264,6 +301,10 @@ p {
         font-size: 1rem;
     }
 
+    .contact {
+        justify-content: center;
+    }
+
     .swiper-slide {
         width: 340px;
     }
@@ -293,12 +334,12 @@ p {
         padding: 20px;
     }
     .flip-card {
-        width: 180px;
-        height: 180px;
+        width: 170px;
+        height: 170px;
     }
     .flip-card img {
-        height: 180px;
-        width: 180px;
+        height: 170px;
+        width: 170px;
     }
 }
 
