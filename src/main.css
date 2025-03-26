@@ -36,6 +36,20 @@ p {
     font-size: 1.125em;
 }
 
+.title-load {
+    opacity: 0;
+    animation: fadeIn 2s forwards;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
 .button-skill {
     display: inline-block;
     background: #0f3460;
