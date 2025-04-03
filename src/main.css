@@ -50,6 +50,22 @@ p {
     }
 }
 
+.footer-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.prjcts {
+    transition: all 0.3s ease-in-out;
+}
+
+.prjcts:hover {
+    box-shadow: 15px 20px #e63946;
+    transform: translateY(-10px) translateX(-10px);
+}
+
 .button-skill {
     display: inline-block;
     background: #0f3460;
