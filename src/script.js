@@ -42,3 +42,36 @@ const swiper = new Swiper('.swiper', {
     },
   },
 });
+
+window.addEventListener('DOMContentLoaded', () => {
+  const params = new URLSearchParams(window.location.search);
+  const highlightId = params.get('highlight');
+
+  if (highlightId) {
+    const element = document.getElementById(highlightId);
+    if (element && element.classList.contains('prjcts')) {
+      element.classList.add('prjcts-hovered');
+      element.scrollIntoView({ behavior: 'smooth', block: 'center' });
+
+      setTimeout(() => {
+        element.classList.remove('prjcts-hovered');
+      }, 1000);
+    }
+  }
+});
+
+window.addEventListener('DOMContentLoaded', () => {
+  const params = new URLSearchParams(window.location.search);
+  const contactID = params.get('contact');
+
+  if (contactID) {
+    const element = document.getElementById(contactID);
+    if (element) {
+      element.classList.add('find-me');
+      element.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      setTimeout(() => {
+        element.classList.remove('find-me');
+      }, 1000);
+    }
+  }
+});

@@ -16,7 +16,7 @@
             <a href="./index.html">Home</a>
             <a href="./about.html">About</a>
             <a href="./projects.html">Projects</a>
-            <a href="./about.html#my-contact">Contact</a>
+            <a href="./about.html?contact=my-contact">Contact</a>
             <div class="animation start-home"></div>
         </nav>
         <main class="mobile-resize">
@@ -25,11 +25,11 @@
                 <br>
                 <div class="grid md:grid-cols-2 grid-cols-1 gap-4 text-center">
                     <!-- Card 1 -->
-                    <div type="button" class="prjcts bg-[#32364d] rounded-lg p-4" data-twe-toggle="modal" data-twe-target="#modal1" data-twe-ripple-init data-twe-ripple-color="light">
+                    <div id="Card1" type="button" class="prjcts bg-[#32364d] rounded-lg p-4" id="Esports" data-twe-toggle="modal" data-twe-target="#modal1" data-twe-ripple-init data-twe-ripple-color="light">
                         <img src="./src/images/esports-page.png" class="rounded-lg">
                         <div class="grid items-center justify-center p-2">
                             <p class="font-bold">TAMUSA Esports</p>
-                            <p>This is a silly paragraph yapping about the program, let it be silly</p>
+                            <p>A site for the Texas A&amp;M San Antonio Esports center; intended to display team rosters and their events/livestreams.</p>
                         </div>
                     </div>
                     
@@ -50,11 +50,11 @@
                     </div>
                     
                     <!-- Card 2 -->
-                    <div type="button" class="prjcts bg-[#32364d] rounded-lg p-4" data-twe-toggle="modal" data-twe-target="#modal1" data-twe-ripple-init data-twe-ripple-color="light">
+                    <div id="Card2" type="button" class="prjcts bg-[#32364d] rounded-lg p-4" id="HB2504" data-twe-toggle="modal" data-twe-target="#modal1" data-twe-ripple-init data-twe-ripple-color="light">
                         <img src="./src/images/hb2504-page.png" class="rounded-lg">
                         <div class="grid items-center justify-center p-2">
                             <p class="font-bold">TAMUSA HB2504</p>
-                            <p>This is a silly paragraph yapping about the program, let it be silly</p>
+                            <p>Texas A&amp;M San Antonio database for Faculty to upload syllabi for their respective courses, and keep track of syllabi uploaded.</p>
                         </div>
                     </div>
                     
@@ -76,11 +76,11 @@
 
 
                     <!-- Card 3 -->
-                    <div type="button" class="prjcts bg-[#32364d] rounded-lg p-4" data-twe-toggle="modal" data-twe-target="#modal1" data-twe-ripple-init data-twe-ripple-color="light">
+                    <div id="Card3" type="button" class="prjcts bg-[#32364d] rounded-lg p-4" id="FutureIntern" data-twe-toggle="modal" data-twe-target="#modal1" data-twe-ripple-init data-twe-ripple-color="light">
                         <img src="./src/images/future-intern-page.png" class="rounded-lg">
                         <div class="grid items-center justify-center p-2">
                             <p class="font-bold">Future Intern</p>
-                            <p>This is a silly paragraph yapping about the program, let it be silly</p>
+                            <p>An internship with Texas A&amp;M San Antonio's Mays Center; intended to be an internship database fetched from multiple clients.</p>
                         </div>
                     </div>
                     
@@ -102,11 +102,11 @@
 
 
                     <!-- Card 4 -->
-                    <div type="button" class="prjcts bg-[#32364d] rounded-lg p-4" data-twe-toggle="modal" data-twe-target="#modal1" data-twe-ripple-init data-twe-ripple-color="light">
+                    <div id="Card4" type="button" class="prjcts bg-[#32364d] rounded-lg p-4" id="CodeEditor" data-twe-toggle="modal" data-twe-target="#modal1" data-twe-ripple-init data-twe-ripple-color="light">
                         <img src="./src/images/code-editor.png" class="rounded-lg">
                         <div class="grid items-center justify-center p-2">
                             <p class="font-bold">Code Editor</p>
-                            <p>This is a silly paragraph yapping about the program, let it be silly</p>
+                            <p>A simple Data Structures course project I collaborated with a colleague; used JavaFX and implemented a stack interface.</p>
                         </div>
                     </div>
                     
@@ -128,11 +128,11 @@
 
 
                     <!-- Card 5 -->
-                    <div type="button" class="prjcts bg-[#32364d] rounded-lg p-4" data-twe-toggle="modal" data-twe-target="#modal1" data-twe-ripple-init data-twe-ripple-color="light">
+                    <div id="Card5" type="button" class="prjcts bg-[#32364d] rounded-lg p-4" id="ProgramFinder" data-twe-toggle="modal" data-twe-target="#modal1" data-twe-ripple-init data-twe-ripple-color="light">
                         <img src="./src/images/program-finder.png" class="rounded-lg">
                         <div class="grid items-center justify-center p-2">
                             <p class="font-bold">Program Finder</p>
-                            <p>This is a silly paragraph yapping about the program, let it be silly</p>
+                            <p>Component created for the Texas A&amp;M San Antonio University website with functionalities like search bar and filter buttons.</p>
                         </div>
                     </div>
                     
@@ -155,6 +155,7 @@
             </div>
             <div id="footer"></div>
             <script src="./src/footer.js"></script>
+            <script type="module" src="./src/script.js"></script>
             <script src="https://cdn.jsdelivr.net/npm/tw-elements/js/tw-elements.umd.min.js"></script>
         </main>
     </body>
