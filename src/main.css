@@ -57,11 +57,18 @@ p {
     text-align: center;
 }
 
+.find-me {
+    color: floralwhite;
+    text-shadow: 2px 2px #e94560;
+    transition: all 0.3s ease-in-out;
+}
+
 .prjcts {
     transition: all 0.3s ease-in-out;
 }
 
-.prjcts:hover {
+.prjcts:hover,
+.prjcts-hovered {
     box-shadow: 15px 20px #e63946;
     transform: translateY(-10px) translateX(-10px);
 }
@@ -325,6 +332,10 @@ p {
 }
 
 @media screen and (max-width: 476px) {
+
+    .container-card p {
+        font-size: 0.95rem;
+    }
 
     .flip-card-back p {
         padding: 1rem;
