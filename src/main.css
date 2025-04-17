@@ -31,7 +31,7 @@ h2 {
     color: #ecf0f1;
 }
 
-p {
+p, a {
     color: #ecf0f1;
     font-size: 1.125em;
 }
@@ -138,7 +138,8 @@ p {
 
   
 .flip-card-back {
-    display: flex;
+    display: grid;
+    padding: 10px;
     align-items: center;
     justify-content: center;
     border-radius: 15px;
@@ -148,7 +149,6 @@ p {
 }
 
 .flip-card-back p {
-    padding: 2rem;
     font-size: 1.2rem;
 }
 
@@ -221,6 +221,40 @@ p {
 .contact {
     display: flex;
     align-items: center;
+}
+
+.prjct-info {
+    position: relative;
+    left: 0;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 10px 20px;
+    color: #ecf0f1;
+    background-color: #0f3460;
+    transition: all 0.3s linear;
+    cursor: pointer;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.prjct-info:after {
+    content: '>>';
+    position: absolute;
+    transition: 0.5s;
+    opacity: 0;
+    right: -20px;
+}
+
+.prjct-info:hover {
+    background-color: #e94560;
+    color: rgb(7, 7, 7);
+    padding-right: 24px;
+    padding-left:8px;
+}
+
+.prjct-info:hover:after {
+    opacity: 1;
+    right: 10px;
 }
 
 .button-info {
@@ -338,7 +372,6 @@ p {
     }
 
     .flip-card-back p {
-        padding: 1rem;
         font-size: 1rem;
     }
 

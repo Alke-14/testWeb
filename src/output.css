@@ -416,6 +416,9 @@
   .m-0 {
     margin: calc(var(--spacing) * 0);
   }
+  .m-2 {
+    margin: calc(var(--spacing) * 2);
+  }
   .m-2\.5 {
     margin: calc(var(--spacing) * 2.5);
   }
@@ -1353,14 +1356,14 @@
   .bg-\(color\:--my-color\) {
     background-color: var(--my-color);
   }
-  .bg-\[\#1d1212\] {
-    background-color: #1d1212;
-  }
   .bg-\[\#6d6d6d\] {
     background-color: #6d6d6d;
   }
   .bg-\[\#0088cc\] {
     background-color: #0088cc;
+  }
+  .bg-\[\#263b43\] {
+    background-color: #263b43;
   }
   .bg-\[\#32364d\] {
     background-color: #32364d;
