@@ -68,28 +68,8 @@ fetch('./src/projects.json')
   .then(data => {
     const projectsContainer = document?.querySelector('.swiper-wrapper');
     const cardContainer = document?.querySelector('.cardHolder');
-    data.projects.forEach(project => {
-      const projectElement = document.createElement('div');
-      projectElement.className = 'swiper-slide justify-center';
-      projectElement.id = project.id;
-      projectElement.innerHTML = `
-        <img src="${project.image}" alt="${project.name}">
-        <div class="container-card">
-            <div class="flex justify-center items-center">
-                <h2>${project.name}</h2>
-            </div>
-            <div class="grid justify-center items-center">
-                <p>${project.description}</p>
-                <a href="./projects.html?highlight=Card${project.id}">
-                    <p class="btn text-center justify-self-center">View More </p>
-                </a>
-            </div>
-        </div>
-
-      `;
-      projectsContainer?.appendChild(projectElement);
-      
-
+    const filteredCards = data.projects.filter(project => project.id !== "1"); // Exclude card with id 1
+    filteredCards.forEach(project => {
       cardContainer?.insertAdjacentHTML('beforeend', `
         <!-- Card ${project.id} -->
         <button id="Card${project.id}" type="button" class="prjcts bg-[#32364d] rounded-lg p-4" data-twe-toggle="modal" data-twe-target="#modal${project.id}" data-twe-ripple-init data-twe-ripple-color="light">
@@ -115,8 +95,27 @@ fetch('./src/projects.json')
           </div>
         </div>
       `);
+  });
+    data.projects.forEach(project => {
+      const projectElement = document.createElement('div');
+      projectElement.className = 'swiper-slide justify-center';
+      projectElement.id = project.id;
+      projectElement.innerHTML = `
+        <img src="${project.image}" alt="${project.name}">
+        <div class="container-card">
+            <div class="flex justify-center items-center">
+                <h2>${project.name}</h2>
+            </div>
+            <div class="grid justify-center items-center">
+                <p>${project.description}</p>
+                <a href="./projects.html?highlight=Card${project.id}">
+                    <p class="btn text-center justify-self-center">View More </p>
+                </a>
+            </div>
+        </div>
+      `;
+      projectsContainer?.appendChild(projectElement);
     });
-    
   })
   .catch(error => console.error('Error fetching projects:', error));
 
