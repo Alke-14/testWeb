@@ -53,7 +53,7 @@
             "path": "https://tutor-me-six.vercel.app/",
             "image": "./src/images/tutorMe.png",
             "type": "web",
-            "description": "AI chatbot made with React &amp; ShadCN Components for Artificial Intelligence course; aimed to be accessible for everyone but specialized in meeting the needs of users with learning disabilities",
+            "description": "AI chatbot made with React &amp; ShadCN Components for Artificial Intelligence course; specialized in meeting the needs of users with learning disabilities.",
             "longBoiDesc": "AI chatbot made with React &amp; ShadCN Components for Artificial Intelligence course;  aimed to be accessible for everyone but specialized in meeting the needs of users with learning disabilities. It is designed to provide personalized assistance and support, ensuring that users can easily access the information they need. Using ShadCN Components, the chatbot offers a user-friendly interface that is both intuitive and visually appealing."
         },
         {
