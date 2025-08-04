@@ -1,5 +1,14 @@
 {
     "projects": [
+        {
+            "id": "1",
+            "name": "TAMUSA Esports",
+            "path": "https://www.tamusa.edu/esports/",
+            "image": "./src/images/esports-page.png",
+            "type": "web",
+            "description": "A site for the Texas A&M San Antonio Esports center; intended to display team rosters and their events/livestreams.",
+            "longBoiDesc": "TAMUSA Esports initially started as a PDF file, my supervisor at the time asked to create a prototype to see how much us student workers could do on our own. About a week of individual development led to then 3 - 4 weeks of development with a team composed of 3 student workers and 1 senior developer approving merge requests. The site is currently hosted in Cascade CMS, and is composed of HTML, CSS/Bootstrap, and JS. They have been converted into Cascade components where users can easily make changes to the site content."
+        },
        
         {
             "id": "2",
