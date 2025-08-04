@@ -20,5 +20,5 @@ footer.innerHTML = `<footer class="grid text-center text-sm p-4 mt-4 rounded-lg 
                 </a>
             </div>
             <p>&copy; 2025 Kevin A. Hernandez Garcia. All rights reserved.</p>
-            <p>Last Updated: July 2025</p>
+            <p>Last Updated: August 2025</p>
         </footer>`;
