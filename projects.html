@@ -23,7 +23,7 @@
             <div class="max-w-6xl md:px-6 lg:px-9 pt-20">
                 <h1 class="text-5xl font-bold pt-4 pb-4">Projects</h1>
                 <br>
-                <div class="grid md:grid-cols-2 grid-cols-1 gap-4 text-center">
+                <div id="cardHolder" class="cardHolder grid md:grid-cols-2 grid-cols-1 gap-4 text-center">
                     <!-- Card 1 -->
                     <div id="Card1" type="button" class="prjcts bg-[#32364d] rounded-lg p-4" id="Esports" data-twe-toggle="modal" data-twe-target="#modal1" data-twe-ripple-init data-twe-ripple-color="light">
                         <img src="./src/images/esports-page.png" class="rounded-lg">
@@ -31,8 +31,7 @@
                             <p class="font-bold">TAMUSA Esports</p>
                             <p>A site for the Texas A&amp;M San Antonio Esports center; intended to display team rosters and their events/livestreams.</p>
                         </div>
-                    </div>
-                    
+                    </div>  
                     <!-- Modal 1 -->
                     <div data-twe-modal-init class="fixed left-0 top-0 z-[1055] hidden h-full w-full overflow-y-auto overflow-x-hidden outline-none" id="modal1" tabindex="-1" aria-labelledby="modal1" aria-modal="true" role="dialog">
                         <div data-twe-modal-dialog-ref class="pointer-events-none relative flex min-h-[calc(100%-1rem)] w-auto translate-y-[-50px] items-center opacity-0 transition-all duration-300 ease-in-out min-[576px]:mx-auto min-[576px]:mt-7 min-[576px]:min-h-[calc(100%-3.5rem)] min-[576px]:max-w-[500px]">
@@ -54,185 +53,7 @@
                         </div>
                     </div>
                     
-                    <!-- Card 2 -->
-                    <div id="Card2" type="button" class="prjcts bg-[#32364d] rounded-lg p-4" id="HB2504" data-twe-toggle="modal" data-twe-target="#modal2" data-twe-ripple-init data-twe-ripple-color="light">
-                        <img src="./src/images/hb2504-page.png" class="rounded-lg">
-                        <div class="grid items-center justify-center p-2">
-                            <p class="font-bold">TAMUSA HB2504</p>
-                            <p>Texas A&amp;M San Antonio database for Faculty to upload syllabi for their respective courses, and keep track of syllabi uploaded.</p>
-                        </div>
-                    </div>
                     
-                    <!-- Modal 2 -->
-                    <div data-twe-modal-init class="fixed left-0 top-0 z-[1055] hidden h-full w-full overflow-y-auto overflow-x-hidden outline-none" id="modal2" tabindex="-1" aria-labelledby="modal1" aria-modal="true" role="dialog">
-                        <div data-twe-modal-dialog-ref class="pointer-events-none relative flex min-h-[calc(100%-1rem)] w-auto translate-y-[-50px] items-center opacity-0 transition-all duration-300 ease-in-out min-[576px]:mx-auto min-[576px]:mt-7 min-[576px]:min-h-[calc(100%-3.5rem)] min-[576px]:max-w-[500px]">
-                            <div class="pointer-events-auto relative flex w-full flex-col rounded-md border-none bg-[#263b43]">
-                                <div class="relative p-4">
-                                    <p>
-                                        HB2504 is a database for faculty where they are mandated by the Texas Higher Education Board to upload the syllabi of their courses
-                                        to said platform. The site is composed of PHP, HTML, CSS/Bootstrap, and JS while the backend is handled using MySQL; this site was an eye opener 
-                                        in terms of how to handle databases and their functionalities as well as how to understand the backend of this site.
-                                    </p>
-                                    <br>
-                                    <a class="block prjct-info text-center m-2" href="https://apps.tamusa.edu/course-information/index.php" target="_blank">View it here!</a>
-                                </div>
-                                <div class="flex flex-shrink-0 flex-wrap items-center justify-end rounded-b-md border-t-2 p-4 border-white/10">
-                                    <button type="button" class="inline-block rounded bg-black px-6 pb-2 pt-2.5 text-white" data-twe-modal-dismiss data-twe-ripple-init data-twe-ripple-color="light">Close</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <!-- Card 3 -->
-                    <div id="Card3" type="button" class="prjcts bg-[#32364d] rounded-lg p-4" id="FutureIntern" data-twe-toggle="modal" data-twe-target="#modal3" data-twe-ripple-init data-twe-ripple-color="light">
-                        <img src="./src/images/future-intern-page.png" class="rounded-lg">
-                        <div class="grid items-center justify-center p-2">
-                            <p class="font-bold">Future Intern</p>
-                            <p>An internship with Texas A&amp;M San Antonio's Mays Center; intended to be an internship database fetched from multiple clients.</p>
-                        </div>
-                    </div>
-                    
-                    <!-- Modal 3 -->
-                    <div data-twe-modal-init class="fixed left-0 top-0 z-[1055] hidden h-full w-full overflow-y-auto overflow-x-hidden outline-none" id="modal3" tabindex="-1" aria-labelledby="modal1" aria-modal="true" role="dialog">
-                        <div data-twe-modal-dialog-ref class="pointer-events-none relative flex min-h-[calc(100%-1rem)] w-auto translate-y-[-50px] items-center opacity-0 transition-all duration-300 ease-in-out min-[576px]:mx-auto min-[576px]:mt-7 min-[576px]:min-h-[calc(100%-3.5rem)] min-[576px]:max-w-[500px]">
-                            <div class="pointer-events-auto relative flex w-full flex-col rounded-md border-none bg-[#263b43]">
-                                <div class="relative p-4">
-                                    <p>
-                                        Future Intern is a website with the intention of helping Texas A&amp;M San Antonio students find internship and job opportunities.
-                                        The site is composed of HTML, JS, and CSS/Angular and its database is handled fetching all the data from a third party API that loads information found
-                                        in Handshake, LinkedIn, etc. 
-                                    </p>
-                                    <br>
-                                    <a class="block prjct-info text-center m-2" href="https://futureintern.vercel.app" target="_blank">View it here!</a>
-                                </div>
-                                <div class="flex flex-shrink-0 flex-wrap items-center justify-end rounded-b-md border-t-2 p-4 border-white/10">
-                                    <button type="button" class="inline-block rounded bg-black px-6 pb-2 pt-2.5 text-white" data-twe-modal-dismiss data-twe-ripple-init data-twe-ripple-color="light">Close</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <!-- Card 4 -->
-                    <div id="Card4" type="button" class="prjcts bg-[#32364d] rounded-lg p-4" id="CodeEditor" data-twe-toggle="modal" data-twe-target="#modal4" data-twe-ripple-init data-twe-ripple-color="light">
-                        <img src="./src/images/code-editor.png" class="rounded-lg">
-                        <div class="grid items-center justify-center p-2">
-                            <p class="font-bold">Code Editor</p>
-                            <p>A simple Data Structures course project I collaborated with a colleague; used JavaFX and implemented a stack interface.</p>
-                        </div>
-                    </div>
-                    
-                    <!-- Modal 4 -->
-                    <div data-twe-modal-init class="fixed left-0 top-0 z-[1055] hidden h-full w-full overflow-y-auto overflow-x-hidden outline-none" id="modal4" tabindex="-1" aria-labelledby="modal1" aria-modal="true" role="dialog">
-                        <div data-twe-modal-dialog-ref class="pointer-events-none relative flex min-h-[calc(100%-1rem)] w-auto translate-y-[-50px] items-center opacity-0 transition-all duration-300 ease-in-out min-[576px]:mx-auto min-[576px]:mt-7 min-[576px]:min-h-[calc(100%-3.5rem)] min-[576px]:max-w-[500px]">
-                            <div class="pointer-events-auto relative flex w-full flex-col rounded-md border-none bg-[#263b43]">
-                                <div class="relative p-4">
-                                    <p>
-                                        This code editor is a Data Structures course project that used JavaFX to create the graphics and Java to work on the backend. Its
-                                        main purpose was to learn how the backend of a simple function like undo/redo works, and learn to how to implement a stack inteface.
-                                        This was created with another student and it was a great experience of getting in0depth knowledge of an Object Oriented Programming language's data structure.
-                                    </p>
-                                    <br>
-                                    <a class="block prjct-info text-center m-2" href="https://github.com/Alke-14/Code_Editor" target="_blank">View it here!</a>
-                                </div>
-                                <div class="flex flex-shrink-0 flex-wrap items-center justify-end rounded-b-md border-t-2 p-4 border-white/10">
-                                    <button type="button" class="inline-block rounded bg-black px-6 pb-2 pt-2.5 text-white" data-twe-modal-dismiss data-twe-ripple-init data-twe-ripple-color="light">Close</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <!-- Card 5 -->
-                    <div id="Card5" type="button" class="prjcts bg-[#32364d] rounded-lg p-4" id="ProgramFinder" data-twe-toggle="modal" data-twe-target="#modal5" data-twe-ripple-init data-twe-ripple-color="light">
-                        <img src="./src/images/program-finder.png" class="rounded-lg">
-                        <div class="grid items-center justify-center p-2">
-                            <p class="font-bold">Program Finder</p>
-                            <p>Component created for the Texas A&amp;M San Antonio University website with functionalities like search bar and filter buttons.</p>
-                        </div>
-                    </div>
-                    
-                    <!-- Modal 5 -->
-                    <div data-twe-modal-init class="fixed left-0 top-0 z-[1055] hidden h-full w-full overflow-y-auto overflow-x-hidden outline-none" id="modal5" tabindex="-1" aria-labelledby="modal1" aria-modal="true" role="dialog">
-                        <div data-twe-modal-dialog-ref class="pointer-events-none relative flex min-h-[calc(100%-1rem)] w-auto translate-y-[-50px] items-center opacity-0 transition-all duration-300 ease-in-out min-[576px]:mx-auto min-[576px]:mt-7 min-[576px]:min-h-[calc(100%-3.5rem)] min-[576px]:max-w-[500px]">
-                            <div class="pointer-events-auto relative flex w-full flex-col rounded-md border-none bg-[#263b43]">
-                                <div class="relative p-4">
-                                    <p>
-                                        A program finder component intended to be an addition to the Texas A&amp;M San Antonio website; it was an fun and learning project as I had
-                                        the opportunity to have more hands-on experience with JSON files and how to fetch their data. The component has functional filter buttons depending on
-                                        whether they are looking for an undergraduate or graduate program, and a search bar for the programs regardless of their type.
-                                    </p>
-                                    <br>
-                                    <a class="block prjct-info text-center m-2" href="https://alke-14.github.io/program-finder/" target="_blank">View it here!</a>
-                                </div>
-                                <div class="flex flex-shrink-0 flex-wrap items-center justify-end rounded-b-md border-t-2 p-4 border-white/10">
-                                    <button type="button" class="inline-block rounded bg-black px-6 pb-2 pt-2.5 text-white" data-twe-modal-dismiss data-twe-ripple-init data-twe-ripple-color="light">Close</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                   
-                    <!-- Card 6 -->
-                    <div id="Card6" type="button" class="prjcts bg-[#32364d] rounded-lg p-4" id="ProgramFinder" data-twe-toggle="modal" data-twe-target="#modal6" data-twe-ripple-init data-twe-ripple-color="light">
-                        <img src="./src/images/tutorMe.png" class="rounded-lg">
-                        <div class="grid items-center justify-center p-2">
-                            <p class="font-bold">tutor.me</p>
-                            <p>AI chatbot made with React &amp; ShadCN Components for Artificial Intelligence course; specialized in accessibility</p>
-                        </div>
-                    </div>
-                    
-                    <!-- Modal 6 -->
-                    <div data-twe-modal-init class="fixed left-0 top-0 z-[1055] hidden h-full w-full overflow-y-auto overflow-x-hidden outline-none" id="modal6" tabindex="-1" aria-labelledby="modal1" aria-modal="true" role="dialog">
-                        <div data-twe-modal-dialog-ref class="pointer-events-none relative flex min-h-[calc(100%-1rem)] w-auto translate-y-[-50px] items-center opacity-0 transition-all duration-300 ease-in-out min-[576px]:mx-auto min-[576px]:mt-7 min-[576px]:min-h-[calc(100%-3.5rem)] min-[576px]:max-w-[500px]">
-                            <div class="pointer-events-auto relative flex w-full flex-col rounded-md border-none bg-[#263b43]">
-                                <div class="relative p-4">
-                                    <p>
-                                        AI chatbot made with React &amp; ShadCN Components for Artificial Intelligence course; 
-                                        aimed to be accessible for everyone but specialized in meeting the needs of users with learning disabilities.
-                                        It is designed to provide personalized assistance and support, ensuring that users can easily access the information they need.
-                                        Using ShadCN Components, the chatbot offers a user-friendly interface that is both intuitive and visually appealing.
-                                    </p>
-                                    <br>
-                                    <a class="block prjct-info text-center m-2" href="https://tutor-me-six.vercel.app" target="_blank">View it here!</a>
-                                </div>
-                                <div class="flex flex-shrink-0 flex-wrap items-center justify-end rounded-b-md border-t-2 p-4 border-white/10">
-                                    <button type="button" class="inline-block rounded bg-black px-6 pb-2 pt-2.5 text-white" data-twe-modal-dismiss data-twe-ripple-init data-twe-ripple-color="light">Close</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Card 7 -->
-                    <div id="Card7" type="button" class="prjcts bg-[#32364d] rounded-lg p-4" id="ProgramFinder" data-twe-toggle="modal" data-twe-target="#modal7" data-twe-ripple-init data-twe-ripple-color="light">
-                        <img src="./src/images/to-do.png" class="rounded-lg">
-                        <div class="grid items-center justify-center p-2">
-                            <p class="font-bold">NextOne</p>
-                            <p>Full-stack app using React &amp; ShadCN Components to put into practice the fundamentals of Backend and Frontend development.</p>
-                        </div>
-                    </div>
-                    
-                    <!-- Modal 7 -->
-                    <div data-twe-modal-init class="fixed left-0 top-0 z-[1055] hidden h-full w-full overflow-y-auto overflow-x-hidden outline-none" id="modal7" tabindex="-1" aria-labelledby="modal1" aria-modal="true" role="dialog">
-                        <div data-twe-modal-dialog-ref class="pointer-events-none relative flex min-h-[calc(100%-1rem)] w-auto translate-y-[-50px] items-center opacity-0 transition-all duration-300 ease-in-out min-[576px]:mx-auto min-[576px]:mt-7 min-[576px]:min-h-[calc(100%-3.5rem)] min-[576px]:max-w-[500px]">
-                            <div class="pointer-events-auto relative flex w-full flex-col rounded-md border-none bg-[#263b43]">
-                                <div class="relative p-4">
-                                    <p>
-                                        Full-stack app using React &amp; ShadCN Components to put into practice the fundamentals of Backend and Frontend development.
-                                        Using ShadCN Components, the simple layout and color scheme offers a user-friendly interface that is both intuitive and visually appealing.
-                                        The app allows users to create, edit, and delete tasks, providing a seamless experience for managing their to-do lists.
-                                        The backend is built with Node.js and Express, ensuring efficient data handling and storage; while it does need some updates, 
-                                        it's a good base of an app that can be used to learn more about full-stack development.
-                                    </p>
-                                    <br>
-                                    <a class="block prjct-info text-center m-2" href="https://project-to-do-red.vercel.app" target="_blank">View it here!</a>
-                                </div>
-                                <div class="flex flex-shrink-0 flex-wrap items-center justify-end rounded-b-md border-t-2 p-4 border-white/10">
-                                    <button type="button" class="inline-block rounded bg-black px-6 pb-2 pt-2.5 text-white" data-twe-modal-dismiss data-twe-ripple-init data-twe-ripple-color="light">Close</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
             </div>
             <div id="footer"></div>
             <script src="./src/footer.js"></script>

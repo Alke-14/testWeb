@@ -1,0 +1,61 @@
+{
+    "projects": [
+       
+        {
+            "id": "2",
+            "name": "TAMUSA HB2504",
+            "path": "https://apps.tamusa.edu/course-information/index.php",
+            "image": "./src/images/hb2504-page.png",
+            "type": "web",
+            "description": "Texas A&amp;M San Antonio database for Faculty to upload syllabi for their respective courses, and keep track of syllabi uploaded.",
+            "longBoiDesc": "HB2504 is a database for faculty where they are mandated by the Texas Higher Education Board to upload the syllabi of their courses to said platform. The site is composed of PHP, HTML, CSS/Bootstrap, and JS while the backend is handled using MySQL; this site was an eye opener in terms of how to handle databases and their functionalities as well as how to understand the backend of this site."
+            
+        },
+        {
+            "id": "3",
+            "name": "Future Intern",
+            "path": "https://futureintern.vercel.app/",
+            "image": "./src/images/future-intern-page.png",
+            "type": "web",
+            "description": "An internship with Texas A&amp;M San Antonio's Mays Center; intended to be an internship database fetched from multiple clients.",
+            "longBoiDesc": "Future Intern is a website with the intention of helping Texas A&amp;M San Antonio students find internship and job opportunities. The site is composed of HTML, JS, and CSS/Angular and its database is handled fetching all the data from a third party API that loads information found in Handshake, LinkedIn, etc. "
+        },
+        {
+            "id": "4",
+            "name": "Code Editor",
+            "path": "https://github.com/Alke-14/Code_Editor",
+            "image": "./src/images/code-editor.png",
+            "type": "web",
+            "description": "A simple Data Structures course project I collaborated with a colleague; used JavaFX and implemented a stack interface.",
+            "longBoiDesc": "This code editor is a Data Structures course project that used JavaFX to create the graphics and Java to work on the backend. Its main purpose was to learn how the backend of a simple function like undo/redo works, and learn to how to implement a stack inteface. This was created with another student and it was a great experience of getting in0depth knowledge of an Object Oriented Programming language's data structure."
+        },
+        {
+            "id": "5",
+            "name": "Program Finder",
+            "path": "https://alke-14.github.io/program-finder/",
+            "image": "./src/images/program-finder.png",
+            "type": "web",
+            "description": "Component created for the Texas A&amp;M San Antonio University website with functionalities like search bar and filter buttons.",
+            "longBoiDesc": "A program finder component intended to be an addition to the Texas A&M San Antonio website; it was an fun and learning project as I had the opportunity to have more hands-on experience with JSON files and how to fetch their data. The component has functional filter buttons depending on whether they are looking for an undergraduate or graduate program, and a search bar for the programs regardless of their type."
+        },
+        {
+            "id": "6",
+            "name": "tutor.me",
+            "path": "https://tutor-me-six.vercel.app/",
+            "image": "./src/images/tutorMe.png",
+            "type": "web",
+            "description": "AI chatbot made with React &amp; ShadCN Components for Artificial Intelligence course; aimed to be accessible for everyone but specialized in meeting the needs of users with learning disabilities",
+            "longBoiDesc": "AI chatbot made with React &amp; ShadCN Components for Artificial Intelligence course;  aimed to be accessible for everyone but specialized in meeting the needs of users with learning disabilities. It is designed to provide personalized assistance and support, ensuring that users can easily access the information they need. Using ShadCN Components, the chatbot offers a user-friendly interface that is both intuitive and visually appealing."
+        },
+        {
+            "id": "7",
+            "name": "NextOne",
+            "path": "https://project-to-do-red.vercel.app/",
+            "image": "./src/images/to-do.png",
+            "type": "web",
+            "description": "To-do list app to for Web Development course; created with the goal of putting to the test my knowledge in both Frontend and Backend programming using Express",
+            "longBoiDesc": "Full-stack app using React &amp; ShadCN Components to put into practice the fundamentals of Backend and Frontend development. Using ShadCN Components, the simple layout and color scheme offers a user-friendly interface that is both intuitive and visually appealing. The app allows users to create, edit, and delete tasks, providing a seamless experience for managing their to-do lists. The backend is built with Node.js and Express, ensuring efficient data handling and storage; while it does need some updates, it's a good base of an app that can be used to learn more about full-stack development."
+        }
+    
+    ]
+}
