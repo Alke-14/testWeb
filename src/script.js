@@ -4,7 +4,7 @@ import Swiper from "https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.mjs
 const swiper = new Swiper('.swiper', {
   direction: 'horizontal',
   slidesPerView: "auto",
-  initialSlide: 2,
+  initialSlide: 4,
   spaceBetween: 30,
   centeredSlides: true,
   autoplay: {
@@ -12,13 +12,12 @@ const swiper = new Swiper('.swiper', {
     disableOnInteraction: false,
   },
   loop: false,
-  effect:'coverflow',
-  coverflowEffect: {
-    rotate: 0,
-    stretch: 80,
-    depth: 350,
-    modifier: 1,
-    slideShadows: true,
+  effect:'cards',
+  cardsEffect: {
+    slideshadows:true,
+    perSlideRotate: 2,
+    perSlideOffset: 8,
+    rotate: true
   },
   pagination: {
     el: '.swiper-pagination',
