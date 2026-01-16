@@ -185,6 +185,27 @@ p, a {
     border-radius: inherit;
 }
 
+.swiper-3d .swiper-slide {
+  pointer-events: auto;
+  transform-style: preserve-3d;
+  z-index: 1;
+}
+
+.swiper-3d .swiper-wrapper {
+  pointer-events: none;
+}
+
+.swiper-3d .swiper-slide * {
+  pointer-events: auto;
+}
+
+.swiper-3d a,
+.swiper-3d button {
+  pointer-events: auto;
+  position: relative;
+  z-index: 50;
+}
+
 .container {
     display: flex;
     align-items: center;
