@@ -7,10 +7,13 @@ const swiper = new Swiper('.swiper', {
   initialSlide: 4,
   spaceBetween: 30,
   centeredSlides: true,
-  autoplay: {
-    delay: 2500,
-    disableOnInteraction: false,
-  },
+  preventClicks: false,
+  preventClicksPropagation: false,
+  touchStartPreventDefault: false,
+  // autoplay: {
+  //   delay: 2500,
+  //   disableOnInteraction: false,
+  // },
   loop: false,
   effect:'cards',
   cardsEffect: {
